@@ -87,7 +87,7 @@ if database == 'CSV':
         Xtest = pd.read_csv(file)
 
         # Carregamento / instanciamento do modelo pkl
-        mdl_rf = load_model('./pickle/pickle_rf_pycaret2')
+        mdl_rf = load_model('https://github.com/IsraelDalcin/Faculdade/raw/refs/heads/main/Frontend-Cp/CP2/pickle/pickle_rf_pycaret2.pkl')
 
         # Predict do modelo
         ypred = predict_model(mdl_rf, data=Xtest, raw_score=True)
