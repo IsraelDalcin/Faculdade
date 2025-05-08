@@ -72,7 +72,7 @@ with st.expander('Descrição do App', expanded=False):
 st.sidebar.write('Configurações')
 with st.sidebar:
     c1, c2 = st.columns([.3, .7])
-    c1.image('./images/logo_fiap.png', width=100)
+    c1.image('https://raw.githubusercontent.com/IsraelDalcin/Faculdade/refs/heads/main/Frontend-Cp/CP2/images/logo_fiap.png', width=100)
     c2.subheader('Case Ifood')
     database = st.radio('Fonte dos dados de entrada (X):', ('CSV', 'Online'), horizontal=True)
 
